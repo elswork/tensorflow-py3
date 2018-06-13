@@ -25,7 +25,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ARG WHL_URL=https://storage.googleapis.com/tensorflow/linux/cpu/
 ARG WHL_FILE=tensorflow-1.9.0rc0-cp34-cp34m-linux_x86_64.whl
 
-RUN python -m pip3 install --upgrade pip3 && \
+RUN python3 -m pip install --upgrade pip && \
     pip3 --no-cache-dir install \
      ipykernel \
      jupyterlab \
