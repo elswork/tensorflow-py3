@@ -23,7 +23,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     rm -rf /var/lib/apt/lists/*
 
 ARG WHL_URL=https://storage.googleapis.com/tensorflow/linux/cpu/
-ARG WHL_FILE=tensorflow-1.9.0rc0-cp34-cp34m-linux_x86_64.whl
+ARG WHL_FILE=tensorflow-1.9.0-cp34-cp34m-linux_x86_64.whl
 
 RUN python3 -m pip install --upgrade pip && \
     pip3 --no-cache-dir install \
@@ -35,9 +35,9 @@ RUN python3 -m pip install --upgrade pip && \
      pandas \
      && \
      curl -O ${WHL_URL}${WHL_FILE} && \
-     mv ${WHL_FILE} tensorflow-1.9.0rc0-py3-none-any.whl && \
-     pip3 --no-cache-dir install tensorflow-1.9.0rc0-py3-none-any.whl && \
-     rm -f tensorflow-1.9.0rc0-py3-none-any.whl && \
+     mv ${WHL_FILE} tensorflow-1.9.0-py3-none-any.whl && \
+     pip3 --no-cache-dir install tensorflow-1.9.0-py3-none-any.whl && \
+     rm -f tensorflow-1.9.0-py3-none-any.whl && \
      python3 -m ipykernel.kernelspec	
 
 COPY jupyter_notebook_config.py /root/.jupyter/

@@ -30,7 +30,7 @@ Build for arm32v7 architecture
 ```sh
 docker build -t elswork/tensorflow-py3:latest \
  --build-arg WHL_URL=http://ci.tensorflow.org/view/Nightly/job/nightly-pi-python3/lastSuccessfulBuild/artifact/output-artifacts/ \
- --build-arg WHL_FILE=tensorflow-1.9.0rc0-cp34-none-linux_armv7l.whl .
+ --build-arg WHL_FILE=tensorflow-1.9.0-cp34-none-linux_armv7l.whl .
 ```
 
 ## My Real Usage Example
