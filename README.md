@@ -1,3 +1,9 @@
+# DEPRECATED - BE AWARE
+
+PLEASE NOTE THAT THIS REPOSITORY IS DEPRECATED, WON'T BE LONGER DEVELOPED,IT HAS BEEN REPLACED BY THIS NEW SET OF REPOSITORIES:
+
+- [Data Science Docker Stack](https://goo.gl/qvx7Vv)
+
 # Supercharged Machine Learning ToolBox
 
 A [Docker](http://docker.com) image for AMD & ARM devices with [Tensorflow 1.9.0](https://www.tensorflow.org/) an open source software library for numerical computation using data flow graphs that will let you play and learn distinct Machine Learning techniques over [Jupyter Notebook](http://jupyter.org/) an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text. Computational Narratives as the Engine of Collaborative Data Science. All this under Python 3.4 language.
